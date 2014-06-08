@@ -1,0 +1,122 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">	
+    
+    <!-- UI to display the Contact details -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            
+		    <ImageView
+		        android:src="@drawable/detailslogo"
+		        android:layout_width="match_parent"
+		        android:layout_height="64dp"
+		        android:scaleType="center"
+		        android:background="@color/orange"
+		        android:contentDescription="@string/app_name" />
+		    
+		    <ImageView
+		        android:id="@+id/nameText"
+		        android:src="@drawable/name"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10dp"
+		        android:scaleType="fitStart" 
+		        android:layout_marginLeft="8dp"
+		        android:layout_toLeftOf="@+id/contact" />
+		    
+		    <TextView
+		        android:id="@+id/displayName"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="4dp"
+		        android:layout_marginLeft="14dp"
+		        android:layout_marginRight="4dp"
+		        android:layout_toRightOf="@+id/nameText"
+		        android:fontFamily="sans-serif"/>
+		    
+		    <ImageView
+		        android:id="@+id/numberText"
+		        android:src="@drawable/number"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10dp"
+		        android:scaleType="fitStart" 
+		        android:layout_marginLeft="8dp"
+		        android:layout_toLeftOf="@+id/contact" />
+		    
+		    <TextView
+		        android:id="@+id/displayNumber"
+		        android:inputType="textEmailAddress"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="16dp"
+		        android:layout_marginLeft="14dp"
+		        android:layout_marginRight="4dp"
+		        android:layout_marginBottom="4dp" />
+		    
+		    <ImageView
+		        android:id="@+id/timeText"
+		        android:src="@drawable/email"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10dp"
+		        android:scaleType="fitStart" 
+		        android:layout_marginLeft="8dp"
+		        android:layout_toLeftOf="@+id/contact" />
+		 
+		    <TextView
+		        android:id="@+id/displayEmail"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="16dp"
+		        android:layout_marginLeft="14dp"
+		        android:layout_marginRight="4dp"
+		        android:layout_marginBottom="4dp" />
+		    
+		    <ImageView
+		        android:id="@+id/postcode"
+		        android:src="@drawable/postcode"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10dp"
+		        android:scaleType="fitStart" 
+		        android:layout_marginLeft="8dp"
+		        android:layout_toLeftOf="@+id/contact" />
+		    
+		    <TextView
+		        android:id="@+id/displayPostcode"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="16dp"
+		        android:layout_marginLeft="14dp"
+		        android:layout_marginRight="4dp"
+		        android:layout_marginBottom="4dp"/>
+		    
+		    <ImageView
+		        android:id="@+id/dob"
+		        android:src="@drawable/age"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10dp"
+		        android:scaleType="fitStart" 
+		        android:layout_marginLeft="8dp"
+		        android:layout_toLeftOf="@+id/contact" />
+		    
+		    <TextView
+		        android:id="@+id/displayAge"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="16dp"
+		        android:layout_marginLeft="14dp"
+		        android:layout_marginRight="4dp"
+		        android:layout_marginBottom="4dp" />
+		</LinearLayout>
+    </ScrollView>
+</LinearLayout>
